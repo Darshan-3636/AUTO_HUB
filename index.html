@@ -3,39 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoHub - Find Your Dream Car</title>
+    <title>Grace Automotives - Quality Car Care</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
-            <h1>AutoHub</h1>
+            <h1>Grace Automotives</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Drive Your Dream Car</h2>
-            <p>Discover top-quality vehicles, hand-picked just for you.</p>
-            <button onclick="showCars()" class="cta-button">Browse Cars</button>
+            <h2>Quality Reigns Supreme</h2>
+            <p>Engineering-Based Car Care by Grace Automotives</p>
+            <button onclick="showServices()" class="cta-button">Explore Services</button>
         </div>
     </section>
 
-    <section id="cars" class="car-listing">
-        <h2>Our Cars</h2>
-        <div id="carContainer" class="car-container"></div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Grace Automotives</h2>
+        <p>Grace Automotives was founded with a mission to deliver quality, trust, and comprehensive car care solutions. Inspired by the legacy of Late Er. Om Prakash Bhatia, we have grown to be a trusted car service provider in the region.</p>
+        <div class="about-grid">
+            <div class="about-item">
+                <h3>Vision</h3>
+                <p>Building trust in every dealing and changing perceptions of car detailing with quality service and long-term relationships.</p>
+            </div>
+            <div class="about-item">
+                <h3>Mission</h3>
+                <p>Delivering excellence by providing quality car care and comprehensive detailing solutions that matter to every customer.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>General Service</h3>
+                <p>Comprehensive car servicing including full service, brakes, engine, and transmission repair.</p>
+            </div>
+            <div class="service-item">
+                <h3>Bodyshop</h3>
+                <p>Dry denting, painting, bumper repair, and major/minor dent repair services.</p>
+            </div>
+            <div class="service-item">
+                <h3>Mechanical Repairs</h3>
+                <p>Aluminum and plastic repairs, suspension replacement, check engine diagnostics, and more.</p>
+            </div>
+            <div class="service-item">
+                <h3>Electrical</h3>
+                <p>Repair and replacement of alternators, batteries, ECM, BCM, and all accessory modules.</p>
+            </div>
+            <div class="service-item">
+                <h3>Air Conditioning</h3>
+                <p>AC repair, gas recharge, airflow issues, and odor removal.</p>
+            </div>
+            <div class="service-item">
+                <h3>Detailing</h3>
+                <p>Exterior and interior detailing, ceramic coating, PPF, rim detailing, and headlight restoration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="ashish.jpg" alt="Er. Ashish Bhatia">
+                <h3>Er. Ashish Bhatia</h3>
+                <p>Founder and CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="areen.jpg" alt="Er. Areen Bhatia">
+                <h3>Er. Areen Bhatia</h3>
+                <p>Chief Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="arav.jpg" alt="Mr. Arav Bhatia">
+                <h3>Mr. Arav Bhatia</h3>
+                <p>Automobile Engineer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact-form">
-        <h2>Get in Touch</h2>
+        <h2>Contact Us</h2>
         <form id="contactForm">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -51,7 +120,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 AutoHub. All rights reserved.</p>
+        <p>&copy; 2024 Grace Automotives. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>
